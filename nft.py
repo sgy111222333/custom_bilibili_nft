@@ -152,7 +152,7 @@ def get_one_card_id():
         return
 
     with open("data.json", "w") as f:
-        f.write(json.dumps(data, indent=4, ensure_ascii=False))
+        f.write(json.dumps(data, indent=4, ensure_ascii=True))
 
     # round_list 的
     for round in data['data']['round_list']:
